@@ -39,13 +39,56 @@ aside {
     min-width: 200px;
 }
 
-div.gallery {
+/* div.gallery {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    height: 10vh;
-}
-div.div {
+    height: 15vh;
+} */
+/* div.div {
     border: 1px solid black;
     text-align: center;
     margin: 10px;
+} */
+
+/* footer {
+    background-color: blue;
+    height: 15vh;
+} */
+div.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+/* Uppgift: Gör bilderna kvadratiska - fortsätt responsiva.*/
+
+div.gallery img {
+    width:200px;
+    /* height: 200px; */
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 1px solid #555;
+    box-shadow: 3px 3px 1px #ccc;
+}
+
+div.gallery figcaption {
+    text-align: center;
+}
+footer {
+    padding: 1rem;
+    background-color: bisque;
+
+    /* Eventuellt placera sidfoten så att den alltid syns */
+    /* absolute, sticky, fixed */
+    width: 100%;
+    bottom: 0;
+    position: sticky;
+}
+div.gallery img:hover {
+    transform: scale(1.1);
 }
