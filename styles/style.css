@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #ddd;
+    margin: 0;
+}
+header {
+    background-color: #fff;
+    height: 100px;
+}
+nav#top-navigation {
+    background-color: hsl(120, 50%, 25%);
+    height: 50px;
+    padding: 1rem;
+    color: white;
+}
+
+/* Skapa en flex, main och aside bredvid varandra */
+
+/* Tips: Använd flex när man vet hur innehållet ser ut, ex 2 eller 3 ytor. */
+/* Tips : Används grid när man inte vet hur många element som finns innanför. */
+
+div#content {
+    display: flex;
+    /* display: grid; */
+    height: 50vh;
+    /* grid-template-columns: minmax(auto, 75%) minmax(200px, auto); */
+}
+main {
+    background-color: #bbb;
+    /* width: 75%; */
+    flex: 2; 
+}
+aside {
+    background-color: #fff;
+    /* width: 25%; */
+    flex: 1;
+    min-width: 200px;
+}
+
+div.gallery {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 10vh;
+}
+div.div {
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+}
